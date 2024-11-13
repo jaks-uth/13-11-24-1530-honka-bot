@@ -8,25 +8,25 @@ public class VehiclesTest {
 
     @Test
     public void testCarMaxSpeed() {
-        Car car = new Car("Sedan", 4);
+        pl.example.vehicles.Car car = new pl.example.vehicles.Car("Sedan", 4);
         assertEquals(200, car.getMaxSpeed());
     }
 
     @Test
     public void testBikeMaxSpeed() {
-        Bike bike = new Bike("Mountain Bike");
+        pl.example.vehicles.Bike bike = new pl.example.vehicles.Bike("Mountain Bike");
         assertEquals(50, bike.getMaxSpeed());
     }
 
     @Test
     public void testCarDoors() {
-        Car car = new Car("Hatchback", 5);
+        pl.example.vehicles.Car car = new pl.example.vehicles.Car("Hatchback", 5);
         assertEquals(5, car.getDoors());
     }
 
     @Test
     public void testVehicleName() {
-        Vehicle vehicle = new Car("Convertible", 2);
-        assertEquals("Convertible", vehicle.getName());
+        pl.example.vehicles.Car car = new Car("Convertible", 2);
+        assertEquals("Convertible", Car.getName());
     }
 }
